@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+
+* {
+    position: relative;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  top: 0px;
+  background-color: #272727;
+  /* box-shadow: 0 0 50px #404B69; */
+  z-index: 100;
+}
+.logo {
+    margin-left: 50px;
+  align-items: center;
+  /* position: absolute;
+    top:  1.25rem; */
+}
+.logo h1 {
+  /* display: inline; */
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  width: 50%;
+
+  /* position: absolute;
+    display: inline;
+    right: 1.25rem;
+    top:  50%; */
+}
+.tabs ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+list-style-type: none;
+}
+
+.tabs ul li {
+  padding: 10px;
+  
+  /* display: inline;
+     */
+}
+.tabs ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.tabs ul li a {
+  /* display: inline;
+    margin: 5px;
+    
+     */
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.contact{
+    margin-right: 50px;
+    border: 2px white solid;
+    padding: 10px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    /* border-radius: 20%; */
+    border-image-slice:1;
+    border-width: 2px;
+}
+.contact a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.main-content{
+    background-color: #272727;
+}
+.social-icons{
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-instagram {
+  background: #d53a9d;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #e49709;
+  color: white;
+}
+
+.home{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+.home img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.name h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+.title h2{
+    font-size: 30px;
+    font-weight: 300;
+    background: linear-gradient(to left, #743ad5, #d53a9d);
+    background-clip: text;
+      color: transparent;
+}
+.description{
+width: 45%;
+}
+.description p{
+    font-size: 24px;
+    color: #EEEEEE;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.contact-button{
+    border: 2px white solid;
+    padding: 10px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    /* border-radius: 20%; */
+    border-image-slice:1;
+    border-width: 2px;
+}
+.contact-button a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.about{
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+.title h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+.lable h2{
+    font-size: 30px;
+    font-weight: 300;
+    background: linear-gradient(to left, #743ad5, #d53a9d);
+    background-clip: text;
+      color: transparent;
+}
+
+.projects{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 30px 50px;
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:column;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.project-title h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+.prject-description p{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #EEEEEE;
+    
+}
+.contact-form{
+    height: 80vh;
+    width: 25%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+
+}
+
+.contact-form label{
+    font-size: 30px;
+    font-weight: 300;
+    background: linear-gradient(to left, #743ad5, #d53a9d);
+    background-clip: text;
+      color: transparent;
+}
+
+.contact-form input{
+    height: 40px;
+    width: 500px;
+}
+.contact-form button{
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    border: 2px white solid;
+    padding: 10px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    /* border-radius: 20%; */
+    border-image-slice:1;
+    border-width: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #EEEEEE;
+    background: none;
+}
