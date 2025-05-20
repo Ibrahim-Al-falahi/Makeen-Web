@@ -5,33 +5,156 @@
 
 .nav{
     position: sticky;
-    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 5rem;
+    top: 0px;
     background-color: black;
+    box-shadow: 0 0 100px red;
+    z-index: 100;
 }
 .brand{
-    position: absolute;
-    top:  1.25rem;
+    display: flex;
+justify-content: space-around;
+width: 20%;
+align-items: center;
+    /* position: absolute;
+    top:  1.25rem; */
 }
 .brand h1{
-    display: inline;
+    /* display: inline; */
     color: aliceblue;
 }
 
 .links{
-    position: absolute;
+    display: flex;
+width: 50%;
+
+    /* position: absolute;
     display: inline;
     right: 1.25rem;
-    top:  50%;
+    top:  50%; */
+}
+.links ul{
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: space-evenly;
 }
 
 .links ul li{
-    display: inline;
-    margin: 5px;
+    padding: 10px;
+    /* display: inline;
+     */
+}
+.links ul li:hover{
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    
 }
 .links ul li a{
-    display: inline;
+    
+    /* display: inline;
     margin: 5px;
+    
+     */
+     font-size: 20px;
+     text-decoration: none;
     color: aliceblue;
-    text-decoration: none;
+}
+
+.main-content{
+    height: 1000px;
+}
+
+.first-content img{
+    width: 100%;
+}
+.first-content h1{
+    position: absolute;
+    font-size: 10rem;
+    z-index: 1;
+    margin: 20px;
+}
+
+/* #flip {
+  height:50px;
+  overflow:hidden;
+  text-transform: uppercase;
+  
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+  font-size: 20px;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+} */
+
+.second-content{
+    height: 500vh;
+    margin-top: 50px ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box{
+    width: 25%;
+    height: 500px;
+    margin: 50px 50px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:column;
+
+}
+
+.picture{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100px;
+}
+.picture img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 100px;
+}
+.description{
+    width: 90%;
+    height: 40%;
 }
