@@ -12,6 +12,7 @@
     top: 0px;
     background-color: black;
     box-shadow: 0 0 100px red;
+    transition: box-shadow 1s ease;
     z-index: 100;
 }
 .brand{
